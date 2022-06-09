@@ -1,0 +1,35 @@
+{
+    "name": "code-standard",
+    "version": "1.0.0",
+    "description": "小A研究代码工程规范流的地方",
+    "main": "index.js",
+    "scripts": {
+        "prettier:check": "npx prettier --check .",
+        "prettier:fix": "npx prettier --write .",
+        "lint": "npx eslint .",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "log": "node index.js",
+        "prepare": "husky install",
+        "commit": "git-cz"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@commitlint/cli": "^17.0.2",
+        "@commitlint/config-conventional": "^17.0.2",
+        "@commitlint/cz-commitlint": "^17.0.0",
+        "commitizen": "^4.2.4",
+        "cz-conventional-changelog": "^3.3.0",
+        "eslint": "^8.17.0",
+        "eslint-config-prettier": "^8.5.0",
+        "husky": "^8.0.1",
+        "lint-staged": "^13.0.0",
+        "prettier": "^2.6.2"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    }
+}
