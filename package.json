@@ -7,6 +7,7 @@
         "prettier:check": "npx prettier --check .",
         "prettier:fix": "npx prettier --write .",
         "lint": "npx eslint .",
+        "lint:style": "stylelint src/**/*.{css,scss} --fix",
         "test": "echo \"Error: no test specified\" && exit 1",
         "log": "node index.js",
         "prepare": "husky install",
@@ -25,7 +26,11 @@
         "eslint-config-prettier": "^8.5.0",
         "husky": "^8.0.1",
         "lint-staged": "^13.0.0",
-        "prettier": "^2.6.2"
+        "prettier": "^2.6.2",
+        "stylelint": "^14.9.0",
+        "stylelint-config-prettier": "^9.0.3",
+        "stylelint-config-standard": "^26.0.0",
+        "stylelint-order": "^5.0.0"
     },
     "config": {
         "commitizen": {
